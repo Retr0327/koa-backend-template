@@ -33,7 +33,7 @@
       "@controllers/*": ["src/api/controllers/*"],
       "@validations/*": ["src/api/validations/*"],
       "@middlewares/*": ["src/api/middlewares/*"],
-      "@config": ["src/api/config/index.ts"],
+      "@configs": ["src/api/configs/index.ts"],
       "@utils/*": ["src/api/utils/*"],
       "@routes": ["src/api/routes/index.ts"],
       "@models": ["src/api/models/index.ts"],
