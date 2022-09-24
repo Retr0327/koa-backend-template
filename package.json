@@ -32,7 +32,8 @@
     "koa-generic-session": "^2.3.0",
     "koa-morgan": "^1.0.1",
     "supertest": "^6.2.3",
-    "ts-jest": "^28.0.5"
+    "ts-jest": "^28.0.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/jest": "^28.1.1",
