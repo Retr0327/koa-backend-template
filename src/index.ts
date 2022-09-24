@@ -3,7 +3,7 @@ import app from './api';
 
 config();
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
