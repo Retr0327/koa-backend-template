@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@koa/cors': ^3.4.1
-  '@koa/router': ^10.1.1
+  '@koa/router': ^12.0.0
   '@types/jest': ^28.1.1
   '@types/koa': ^2.13.4
   '@types/koa-bodyparser': ^4.3.7
@@ -28,7 +28,7 @@ specifiers:
 
 dependencies:
   '@koa/cors': 3.4.1
-  '@koa/router': 10.1.1
+  '@koa/router': 12.0.0
   dotenv: 16.0.2
   koa: 2.13.4
   koa-bodyparser: 4.3.0
@@ -671,17 +671,14 @@ packages:
       vary: 1.1.2
     dev: false
 
-  /@koa/router/10.1.1:
-    resolution: {integrity: sha512-ORNjq5z4EmQPriKbR0ER3k4Gh7YGNhWDL7JBW+8wXDrHLbWYKYSJaOJ9aN06npF5tbTxe2JBOsurpJDAvjiXKw==}
-    engines: {node: '>= 8.0.0'}
+  /@koa/router/12.0.0:
+    resolution: {integrity: sha512-cnnxeKHXlt7XARJptflGURdJaO+ITpNkOHmQu7NHmCoRinPbyvFzce/EG/E8Zy81yQ1W9MoSdtklc3nyaDReUw==}
+    engines: {node: '>= 12'}
     dependencies:
-      debug: 4.3.4
-      http-errors: 1.8.1
+      http-errors: 2.0.0
       koa-compose: 4.1.0
       methods: 1.1.2
       path-to-regexp: 6.2.1
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
