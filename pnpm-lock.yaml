@@ -22,6 +22,7 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-n: ^15.3.0
   eslint-plugin-promise: ^6.0.1
+  husky: ^8.0.1
   koa: ^2.13.4
   koa-bodyparser: ^4.3.0
   koa-generic-session: ^2.3.0
@@ -66,6 +67,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_2azyxy5wfmd73v3pbt5rvmgcsm
   eslint-plugin-n: 15.3.0_eslint@8.24.0
   eslint-plugin-promise: 6.0.1_eslint@8.24.0
+  husky: 8.0.1
   nodemon: 2.0.20
   ts-node: 10.9.1_u7tj3mdglidusk2sd73zi6kt7q
   tsc-alias: 1.7.0
@@ -2455,6 +2457,12 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
     dev: false
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
