@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Retr0327/koa-backend-template#readme",
   "dependencies": {
-    "@koa/cors": "^3.3.0",
+    "@koa/cors": "^3.4.1",
     "@koa/router": "^10.1.1",
     "dotenv": "^16.0.2",
     "koa": "^2.13.4",

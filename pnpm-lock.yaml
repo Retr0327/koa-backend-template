@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@koa/cors': ^3.3.0
+  '@koa/cors': ^3.4.1
   '@koa/router': ^10.1.1
   '@types/jest': ^28.1.1
   '@types/koa': ^2.13.4
