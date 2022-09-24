@@ -4,9 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "npx kill-port 3000 && nodemon -L --config nodemon.json",
-    "build": "webpack --mode production",
-    "start": "node ./dist/server.js"
+    "dev": "nodemon src/index.ts",
+    "start": "PORT=3001 NODE_ENV=production node -r dotenv/config dist/src/index.js",
+    "build": "tsc && tsc-alias",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
