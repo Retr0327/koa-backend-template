@@ -3,9 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@koa/cors': ^3.4.1
   '@koa/router': ^12.0.0
+  '@types/etag': ^1.8.1
   '@types/jest': ^28.1.1
   '@types/koa': ^2.13.4
   '@types/koa-bodyparser': ^4.3.7
+  '@types/koa-conditional-get': ^2.0.0
+  '@types/koa-etag': ^3.0.0
   '@types/koa-generic-session': ^2.2.1
   '@types/koa-morgan': ^1.0.5
   '@types/koa__cors': ^3.3.0
@@ -25,6 +28,8 @@ specifiers:
   husky: ^8.0.1
   koa: ^2.13.4
   koa-bodyparser: ^4.3.0
+  koa-conditional-get: ^3.0.0
+  koa-etag: ^4.0.0
   koa-generic-session: ^2.3.0
   koa-morgan: ^1.0.1
   lint-staged: ^13.0.3
@@ -44,6 +49,8 @@ dependencies:
   dotenv: 16.0.2
   koa: 2.13.4
   koa-bodyparser: 4.3.0
+  koa-conditional-get: 3.0.0
+  koa-etag: 4.0.0
   koa-generic-session: 2.3.0
   koa-morgan: 1.0.1
   supertest: 6.2.4
@@ -51,9 +58,12 @@ dependencies:
   yup: 0.32.11
 
 devDependencies:
+  '@types/etag': 1.8.1
   '@types/jest': 28.1.8
   '@types/koa': 2.13.5
   '@types/koa-bodyparser': 4.3.8
+  '@types/koa-conditional-get': 2.0.0
+  '@types/koa-etag': 3.0.0
   '@types/koa-generic-session': 2.2.1
   '@types/koa-morgan': 1.0.5
   '@types/koa__cors': 3.3.0
@@ -859,6 +869,12 @@ packages:
       '@types/node': 18.7.19
     dev: true
 
+  /@types/etag/1.8.1:
+    resolution: {integrity: sha512-bsKkeSqN7HYyYntFRAmzcwx/dKW4Wa+KVMTInANlI72PWLQmOpZu96j0OqHZGArW4VQwCmJPteQlXaUDeOB0WQ==}
+    dependencies:
+      '@types/node': 18.7.19
+    dev: true
+
   /@types/express-serve-static-core/4.17.31:
     resolution: {integrity: sha512-DxMhY+NAsTwMMFHBTtJFNp5qiHKJ7TeqOo23zVEM9alT1Ml27Q3xcTH0xwxn7Q0BbMcVEJOs/7aQtUWupUQN3Q==}
     dependencies:
@@ -931,6 +947,19 @@ packages:
   /@types/koa-compose/3.2.5:
     resolution: {integrity: sha512-B8nG/OoE1ORZqCkBVsup/AKcvjdgoHnfi4pZMn5UwAPCbhk/96xyv284eBYW8JlQbQ7zDmnpFr68I/40mFoIBQ==}
     dependencies:
+      '@types/koa': 2.13.5
+    dev: true
+
+  /@types/koa-conditional-get/2.0.0:
+    resolution: {integrity: sha512-kzEIakwXkkgiJhQPR/IudINqX+xB2gVS+lJWDSEUP3cMYflcX470OOWrUEqOXlc2cCAOyznMo7fFmwfnvd9wyw==}
+    dependencies:
+      '@types/koa': 2.13.5
+    dev: true
+
+  /@types/koa-etag/3.0.0:
+    resolution: {integrity: sha512-gXQUtKGEnCy0sZLG+uE3wL4mvY1CBPcb6ECjpAoD8RGYy/8ACY1B084k8LTFPIdVcmy7GD6Y4n3up3jnupofcQ==}
+    dependencies:
+      '@types/etag': 1.8.1
       '@types/koa': 2.13.5
     dev: true
 
@@ -2196,6 +2225,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /etag/1.8.1:
+    resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
   /execa/5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
@@ -3275,12 +3309,22 @@ packages:
     resolution: {integrity: sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==}
     dev: false
 
+  /koa-conditional-get/3.0.0:
+    resolution: {integrity: sha512-VKyPS7SuNH26TjTV2IRz+oh0HV/jc2lYAo51PTQTkj0XFn8ebNZW9riczmrW7ZVBFSnls1Z88DPUYKnvVymruA==}
+    dev: false
+
   /koa-convert/2.0.0:
     resolution: {integrity: sha512-asOvN6bFlSnxewce2e/DK3p4tltyfC4VM7ZwuTuepI7dEQVcvpyFuBcEARu1+Hxg8DIwytce2n7jrZtRlPrARA==}
     engines: {node: '>= 10'}
     dependencies:
       co: 4.6.0
       koa-compose: 4.1.0
+    dev: false
+
+  /koa-etag/4.0.0:
+    resolution: {integrity: sha512-1cSdezCkBWlyuB9l6c/IFoe1ANCDdPBxkDkRiaIup40xpUub6U/wwRXoKBZw/O5BifX9OlqAjYnDyzM6+l+TAg==}
+    dependencies:
+      etag: 1.8.1
     dev: false
 
   /koa-generic-session/2.3.0:
