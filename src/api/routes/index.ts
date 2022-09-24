@@ -1,12 +1,14 @@
-import Router from "@koa/router";
-import { RouterContext } from "@koa/router";
+import { PREFIX } from '@configs';
+import Router, { RouterContext } from '@koa/router';
 
-const router = new Router({});
+const router = new Router();
 
-router.get("/", (ctx: RouterContext) => {
-  const ip = ctx.request.ip.replace("::ffff:", "");
+router.prefix(PREFIX);
+
+router.get('/', (ctx: RouterContext) => {
+  const ip = ctx.request.ip.replace('::ffff:', '');
   ctx.status = 200;
-  ctx.body = { status: "success", ip };
+  ctx.body = { status: 'success', ip };
 });
 
 export default router;
