@@ -1,4 +1,4 @@
-import { PREFIX } from '@configs';
+import PREFIX from '@configs';
 import Router, { RouterContext } from '@koa/router';
 
 const router = new Router();
